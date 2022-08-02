@@ -5,9 +5,11 @@ import FilmBox from "./containers/FilmBox";
 function App() {
 
   return (
+    <div className='film-box'>
+      <FilmBox />
+    </div>
+  
 
-    <FilmBox />
-    
   );
 }
 

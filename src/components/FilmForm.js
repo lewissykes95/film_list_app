@@ -35,27 +35,37 @@ const FilmForm = ({onFilmSubmit}) => {
 
     }
 
-
     return (
         <form className="film-form" onSubmit={handlFilmInput}>
-            <input
-            type="text"
-            placeholder="Title:"
-            value={name}
-            onChange={handleNameChange}
-            />
+            
+            <div className="flex-item-form">
+                <input
+                type="text"
+                placeholder="Title:"
+                value={name}
+                onChange={handleNameChange}
+                className="text-box"
+                />
+            </div>
 
-            <input
-            type="url"
-            placeholder="Enter Review Link..."
-            value={url}
-            onChange={handleUrlChange}
-            />
+            <div className="flex-item-form">
+                <input
+                type="url"
+                placeholder="Enter Review Link..."
+                value={url}
+                onChange={handleUrlChange}
+                className="text-box"
+                />
+            </div>
+            
+            <div className="flex-item-form">
+                <input
+                type="submit"
+                value="Add Film"
+                className="button"
+                />
+            </div>
 
-            <input
-            type="submit"
-            value="Post"
-            />
         </form>
     )
 

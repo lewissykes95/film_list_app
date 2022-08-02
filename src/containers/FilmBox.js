@@ -5,7 +5,6 @@ import FilmForm from "../components/FilmForm"
 
 
 
-
 const FilmBox = () => {
 
     const [films, setFilms] = useState(
@@ -45,11 +44,12 @@ const FilmBox = () => {
     return (
 
         <>
-            <h1>Upcoming Film Releases for the UK</h1>
+            <h1 className="header">Upcoming Film Releases for the UK</h1>
             <hr></hr>
             <FilmList films = {films}/>
+            <hr></hr>
             <FilmButton/>
-            <h2>Add Film</h2>
+            <h2 className="header">Add Film</h2>
             <FilmForm onFilmSubmit={(film) => addFilm(film)}/>
         </>
 
